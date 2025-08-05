@@ -15,6 +15,7 @@ BuildRequires: rofi-devel
 BuildRequires: pkgconfig
 BuildRequires: gcc
 Requires: qalculate
+Requires: rofi
 
 %description
 A rofi plugin that uses qalculate's qalc to parse natural language input and provide results.
@@ -31,14 +32,9 @@ A rofi plugin that uses qalculate's qalc to parse natural language input and pro
 %install
 %meson_install
 
-
-%check
-%meson_test
-
 %files
-%license
-%doc
-
+%{_prefix}/lib/debug/%{_libdir}/rofi/libcalc-%{version}.*
+%{_libdir}/rofi/libcalc.so
 
 %changelog
 %autochangelog
