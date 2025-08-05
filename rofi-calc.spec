@@ -33,7 +33,7 @@ A rofi plugin that uses qalculate's qalc to parse natural language input and pro
 %meson_install
 
 %files
-%{_prefix}/lib/debug/%{_libdir}/rofi/libcalc.so-%{version}.*
+%{_prefix}/lib/debug/%{_libdir}/rofi/libcalc.so-*
 %{_libdir}/rofi/libcalc.so
 
 %changelog
