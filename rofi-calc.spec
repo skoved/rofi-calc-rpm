@@ -1,5 +1,5 @@
 Name:           rofi-calc
-Version:        2.4.0
+Version:        2.4.1
 Release:        %autorelease
 Summary:        Do live calculations in rofi
 
